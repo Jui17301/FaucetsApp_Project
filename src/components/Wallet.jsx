@@ -23,7 +23,7 @@ const WalletConnectButton = () => {
      
         Connect Wallet
       </button>
-      <img src={wallet} className="wallet_img" alt="" style={{visibility:"hidden"}}/>
+     
       {isModalOpen && (
         <div className="modal">
           <div className="modal-content">

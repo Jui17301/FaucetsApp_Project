@@ -20,27 +20,33 @@ const Navbarr = () => {
         <Navbar.Brand href="#home" className='nav--header__left'>Faucets</Navbar.Brand>
         
          {/* dropdown starts here */}
-         <Dropdown  style={{display:"flex",gap:"1rem",padding:"0px"}}>
-      <Dropdown.Toggle variant="" style={{border:"1px solid black",
-  color : "#6d7380",
-  fontSize:"14px"}} id="dropdown-basic">
-       <img style={{
-  height:"15px",
-  marginBottom:"-2px",
-  marginRight:"8px",
-  width:"15px"
+         <Dropdown style={{display:"flex",gap:"1rem"}}>
+         <Dropdown.Toggle 
+         style={{
+            color : "#686868",
+            backgroundColor : "#ffffff",
+              fontSize:"14px"}} 
+              id="dropdown-basic">
+               <img 
+               style={{
+                 height:"15px",
+                 marginBottom:"-2px",
+                   marginRight:"8px",
+                 width:"15px"
 }} src={arbitrum} alt="" />
-       <span className='dropdown'> Arbitrum Rinkeby</span>
+        Arbitrum Rinkeby
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
+        {/* <Dropdown.Item href="#/action-1"></Dropdown.Item> */}
         <Dropdown.Item href="#/action-1"
         style={{
           backgroundColor : "#ffffff",
           color:"#686868",
           fontSize: "14px"
         }}>
-        <img style={{height:"15px",marginBottom:"-2px",marginRight:"8px",width:"15px"}} src={fuji} alt="" />Avalanche Fuji</Dropdown.Item>
+        <img 
+        style={{height:"15px",marginBottom:"-2px",marginRight:"8px",width:"15px"}} src={fuji} alt="" />Avalanche Fuji</Dropdown.Item>
         <Dropdown.Item href="#/action-2"  style={{
           backgroundColor : "#ffffff",
           color:"#686868",
@@ -52,7 +58,7 @@ const Navbarr = () => {
   marginRight:"8px",
   width:"15px"
 }} src="" alt="" />
-<span className='dropdown'>BNB Chain Testnet</span></Dropdown.Item>
+BNB Chain Testnet</Dropdown.Item>
         <Dropdown.Item href="#/action-3"  style={{
           backgroundColor : "#ffffff",
           color:"#686868",
@@ -64,8 +70,8 @@ const Navbarr = () => {
   marginRight:"8px",
   width:"15px"
 }} src={arbitrum} alt="" />
-<span className='dropdown'>Ethereum Rinkeby</span></Dropdown.Item>
-        <Dropdown.Item href="#/action-4"  style={{
+Ethereum Rinkeby</Dropdown.Item>
+<Dropdown.Item href="#/action-4"  style={{
           backgroundColor : "#ffffff",
           color:"#686868",
           fontSize: "14px"
@@ -76,7 +82,7 @@ const Navbarr = () => {
   marginRight:"8px",
   width:"15px"
 }} src={fantom} alt="" />
-<span className='dropdown'>Fantom Testnet</span></Dropdown.Item>
+Fantom Testnet</Dropdown.Item>
         <Dropdown.Item href="#/action-5"  style={{
           backgroundColor : "#ffffff",
           color:"#686868",
@@ -88,7 +94,7 @@ const Navbarr = () => {
   marginRight:"8px",
   width:"15px"
 }} src={harmony} alt="" />
-<span className='dropdown'>Harmony Testnet</span></Dropdown.Item>
+Harmony Testnet</Dropdown.Item>
         <Dropdown.Item href="#/action-6"  style={{
           backgroundColor : "#ffffff",
           color:"#686868",
@@ -100,7 +106,7 @@ const Navbarr = () => {
   marginRight:"8px",
   width:"15px"
 }} src={poa} alt="" />
-<span className='dropdown'>POA Network Sokol</span></Dropdown.Item>
+POA Network Sokol</Dropdown.Item>
         <Dropdown.Item href="#/action-7"  style={{
           backgroundColor : "#ffffff",
           color:"#686868",
@@ -112,17 +118,14 @@ const Navbarr = () => {
   marginRight:"8px",
   width:"15px"
 }} src={polygon} alt="" />
-<span className='dropdown'>Polygon Mumbai</span></Dropdown.Item>
+Polygon Mumbai</Dropdown.Item>
+        
       </Dropdown.Menu>
-      <Wallet />
-    
-  
-
-            {/* dropdown ends here */}
-            <div style={{fontSize:"25px",backgroundColor:"#ccc",width:"50px",height:"50px",borderRadius:"50px",paddingLeft:"12px"}}>
+      <Wallet/>
+      <div style={{fontSize:"25px",backgroundColor:"#ccc",width:"50px",height:"50px",borderRadius:"50px",paddingLeft:"12px"}}>
         <FaRegUserCircle  />
         </div>
-        </Dropdown>
+    </Dropdown>
       </Container>
     </Navbar>
 
